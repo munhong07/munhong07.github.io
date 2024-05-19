@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -48,9 +49,8 @@ export default function Home() {
               /> */}
             </div>
 
-            <div className="flex items-center w-auto h-auto sm:size-96 md:size-1/2 ">
-              <img src="./images/illustration.jpg" />
-              <a href="http://www.freepik.com"></a>
+            <div className="flex justify-center items-center w-auto h-auto sm:size-96 md:size-1/2 ">
+              <Image src="/images/illustration.jpg" quality={100} width={700} height={700} alt="pic" />
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function Home() {
                     <p className="font-bold text-indigo-600 p-1">2022 - Present</p>
                     <p className="font-bold p-1">Intern</p>
                   </div>
-                  <img src="./images/tigaky.jpg" alt="tigaky" className="w-auto h-auto xs:h-16" />
+                  <Image src="/images/tigaky.jpg" quality={100} width={500} height={500} alt="tigaky" className="w-auto h-auto xs:h-20" />
                 </div>
                 <ul className="flex flex-col gap-4 p-2 text-justify">
                   <li className="flex gap-2"><span><FontAwesomeIcon icon={faCheck} /></span>Deployed and managed virtual machines, installed various operating systems including Windows, Ubuntu, and Debian on Proxmox. Allocated resources for optimal performance.</li>
@@ -143,7 +143,7 @@ export default function Home() {
                     <p className="font-bold text-indigo-600 p-1">2022 - Present</p>
                     <p className="font-bold p-1">IT Technician</p>
                   </div>
-                  <img src="./images/maco.png" alt="maco" className="w-24 h-auto" />
+                  <Image src="/images/maco.png" quality={100} width={500} height={500} alt="maco" className="w-24 h-auto" />
                 </div>
                 <ul className="flex flex-col gap-4 p-3 text-justify">
                   <li className="flex gap-2"><span><FontAwesomeIcon icon={faCheck} /></span>Refurbished donated PCs, laptops, and other additional computers peripherals before distributing them to schools who are in need.</li>
@@ -161,39 +161,39 @@ export default function Home() {
             <h1 className="font-bold p-5 text-2xl text-center lg:text-left lg:text-3xl underline underline-offset-8 decoration-4 decoration-indigo-500">I am familiar with</h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 pt-12">
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/html.png" alt="html" />
+                <Image src="/images/html.png" quality={100} width={100} height={100} alt="html" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">HTML</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/css.png" alt="css" />
+                <Image src="/images/css.png" quality={100}  width={100} height={100} alt="css" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">CSS</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/js.png" alt="javascript" />
+                <Image src="/images/js.png" quality={100} width={100} height={100} alt="javascript" />
                 <p className="text-black font-semibold text-center text-normall md:text-xl">JavaScript</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/php.png" alt="php" />
+                <Image src="/images/php.png" quality={100} width={100} height={100} alt="php" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">PHP</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/tailwind.png" alt="tailwind" />
+                <Image src="/images/tailwind.png" quality={100} width={100} height={100} alt="tailwind" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">Tailwind</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/react.png" alt="react" />
+                <Image src="/images/react.png" quality={100} width={100} height={100} alt="react" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">React</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/python.png" alt="python" />
+                <Image src="/images/python.png" quality={100} width={100} height={100} alt="python" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">Python</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/java.png" alt="java" />
+                <Image src="/images/java.png" quality={100} width={100} height={100} alt="java" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">Java</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <img src="./images/mysql.png" alt="mysql" />
+                <Image src="/images/mysql.png" quality={100} width={100} height={100} alt="mysql" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">MySQL</p>
               </div>
             </div>
