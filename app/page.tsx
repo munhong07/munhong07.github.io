@@ -24,7 +24,7 @@ export default function Home() {
                 <span className="text-indigo-500"> Mun Hong</span>
               </h1>
 
-              <div className="flex  pt-5 gap-5">
+              <div className="flex pt-5 gap-5">
                 <a href="#" className="flex p-1 hover:text-indigo-600 rounded-lg hover:scale-110 duration-200">
                   <FontAwesomeIcon icon={faGithub} className="text-4xl lg:text-4xl" href="#" />
                 </a>
@@ -49,8 +49,8 @@ export default function Home() {
             </div>
 
             <div className="flex items-center w-auto h-auto sm:size-96 md:size-1/2 ">
-              <img className=" " src="./images/illustration.jpg" />
-              <a className="" href="http://www.freepik.com"></a>
+              <img src="./images/illustration.jpg" />
+              <a href="http://www.freepik.com"></a>
             </div>
           </div>
         </div>
