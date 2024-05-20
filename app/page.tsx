@@ -61,14 +61,13 @@ export default function Home() {
             <div className="w-96 text-center md:w-2/12 lg:w-auto text-2xl lg:text-4xl font-bold">
               <p className="underline decoration-indigo-500 decoration-4 underline-offset-8 animate-bounce">About Me</p>
             </div>
-            <div className="w-full h-auto lg:w-[52%] text-left text-xl sm:text-1xl md:text-2xl lg:w-2/3 p-8 rounded-xl bg-white opacity-80">
+            <div className="w-full h-auto lg:w-[52%] text-left text-xl sm:text-1xl md:text-2xl lg:w-2/3 p-8 rounded-xl tracking-wider bg-white opacity-80">
               <p className="text-justify">
                 I am a recent <span className="font-bold text-indigo-500">software engineer</span> <span className="font-bold">graduate</span>, and I am passionate about
                 learning and developing scalable software solutions. With a solid foundation in <span className="font-bold italic">HTML</span>, <span className="font-bold italic">CSS</span>,
                 and <span className="font-bold italic">JavaScript</span>, as well as
-                experience with web development frameworks like React and Tailwind, I have further improved my skills through internships.
-                I am currently seeking an entry-level software developer position, preferably in front-end development, where I can apply
-                my technical skills and contribute to dynamic projects in the IT industry.
+                experience with web development frameworks like React and Tailwind, I am seeking an entry-level software developer position, preferably 
+                in front-end development, where I can apply my technical skills and contribute to dynamic projects in the IT industry.
               </p>
             </div>
           </div>
