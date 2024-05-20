@@ -156,7 +156,7 @@ export default function Home() {
         </div>
 
         {/* Skill section */}
-        <div className="w-auto h-auto py-20 lg:py-40 lg:px-10 flex flex-col lg:flex-row gap-10 bg-gray-100" id="skill">
+        <div className="w-auto h-auto py-20 lg:py-30 lg:px-10 flex flex-col lg:flex-row gap-10 bg-gray-100" id="skill">
           <div className="flex flex-col lg:w-1/2 p-5 bg-white rounded-xl">
             <h1 className="font-bold p-5 text-2xl text-center lg:text-left lg:text-3xl underline underline-offset-8 decoration-4 decoration-indigo-500">I am familiar with</h1>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 pt-12">
