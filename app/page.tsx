@@ -56,12 +56,12 @@ export default function Home() {
         </div>
 
         {/* About Me */}
-        <div className="w-full h-auto py-12 bg-cloud bg-center bg-fixed" id="about">
-          <div className="flex flex-col py-36 md:flex-col lg:flex-row gap-0 justify-evenly items-center">
+        <div className="w-full h-auto py-12 bg-gray-100 " id="about">
+          <div className="flex flex-col py-36 md:flex-col lg:flex-row gap-4 lg:gap-0 justify-evenly items-center">
             <div className="w-96 text-center md:w-2/12 lg:w-auto text-2xl lg:text-4xl font-bold">
               <p className="underline decoration-indigo-500 decoration-4 underline-offset-8 animate-bounce">About Me</p>
             </div>
-            <div className="w-full h-auto lg:w-[52%] text-left text-xl sm:text-1xl md:text-2xl lg:w-2/3 p-4 ">
+            <div className="w-full h-auto lg:w-[52%] text-left text-xl sm:text-1xl md:text-2xl lg:w-2/3 p-8 rounded-xl bg-white opacity-80">
               <p className="text-justify">
                 I am a recent <span className="font-bold text-indigo-500">software engineer</span> <span className="font-bold">graduate</span>, and I am passionate about
                 learning and developing scalable software solutions. With a solid foundation in <span className="font-bold italic">HTML</span>, <span className="font-bold italic">CSS</span>,
@@ -165,7 +165,7 @@ export default function Home() {
                 <p className="text-black font-semibold text-center text-normal md:text-xl">HTML</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
-                <Image src="/images/css.png" quality={100}  width={100} height={100} alt="css" />
+                <Image src="/images/css.png" quality={100} width={100} height={100} alt="css" />
                 <p className="text-black font-semibold text-center text-normal md:text-xl">CSS</p>
               </div>
               <div className="flex flex-col justify-center items-center p-5">
@@ -201,20 +201,20 @@ export default function Home() {
 
           <div className="flex flex-col lg:w-1/2 p-5 bg-white rounded-xl">
             <h1 className="font-bold p-5 text-2xl text-center lg:text-left lg:text-3xl underline underline-offset-8 decoration-4 decoration-indigo-500">Language</h1>
-            <div className="flex flex-col lg:flex lg:flex-col items-center h-full w-full gap-4 pt-16">
-              <div className="bg-indigo-100 p-2 rounded-full w-full md:w-3/4">
+            <div className="flex flex-col lg:flex lg:flex-col items-center h-full w-full gap-4 pt-16 md:px-5">
+              <div className="bg-indigo-100 p-2 rounded-full w-full">
                 <div className="flex justify-between bg-gradient-to-r from-slate-50 via-cyan-300 to-indigo-500 p-4 w-[80%] rounded-full">
                   <p className="font-bold text-xl">Chinese</p>
                   <p className="font-bold text-xl text-gray-100">80%</p>
                 </div>
               </div>
-              <div className="bg-indigo-100 p-2 rounded-full w-full md:w-3/4">
+              <div className="bg-indigo-100 p-2 rounded-full w-full">
                 <div className="flex justify-between bg-gradient-to-r from-slate-50 via-cyan-300 to-indigo-500 p-4 w-[70%] rounded-full">
                   <p className="font-bold text-xl">English</p>
                   <p className="font-bold text-xl text-gray-100">70%</p>
                 </div>
               </div>
-              <div className="bg-indigo-100 p-2 rounded-full w-full md:w-3/4">
+              <div className="bg-indigo-100 p-2 rounded-full w-full">
                 <div className="flex justify-between bg-gradient-to-r from-slate-50 via-cyan-300 to-indigo-500 p-4 w-[50%] rounded-full">
                   <p className="font-bold text-xl">Malay</p>
                   <p className="font-bold text-xl text-gray-100">50%</p>
