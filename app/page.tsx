@@ -112,7 +112,7 @@ export default function Home() {
         </div>
 
         {/* Experience Section */}
-        <div className="w-auto h-auto py-12 lg:py-56  bg-gradient-to-tl from-slate-50 to-indigo-400 bg-mountains bg-fixed" id="experience">
+        <div className="w-auto h-auto py-12 lg:py-56  bg-gradient-to-tl from-slate-50 to-indigo-400 bg-mountains bg-cover" id="experience">
           <div className="flex justify-center items-center">
             <h1 className="font-bold text-2xl lg:text-4xl text-black underline decoration-indigo-500 decoration-4 underline-offset-8">Experience</h1>
           </div>
@@ -261,7 +261,7 @@ export default function Home() {
 
 
         {/* Project */}
-        <section className="w-full h-auto py-36 mx-auto bg-snow bg-fixed" id="project">
+        <section className="w-full h-auto py-36 mx-auto bg-snow bg-cover" id="project">
 
           <div className="flex flex-col lg:flex-row justify-center items-center md:justify-evenly">
             <div>
