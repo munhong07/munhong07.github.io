@@ -1,4 +1,6 @@
+'use client';
 import Image from 'next/image'
+import { useState, useEffect } from 'react';
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,8 +10,33 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faHand } from '@fortawesome/free-solid-svg-icons';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
+
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setVisible(true)
+      } else {
+        setVisible(false)
+      }
+    }
+
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <div>
       <div className="flex flex-col">
@@ -66,7 +93,7 @@ export default function Home() {
                 I am a recent <span className="font-bold text-indigo-500">software engineer</span> <span className="font-bold">graduate</span>, and I am passionate about
                 learning and developing scalable software solutions. With a solid foundation in <span className="font-bold italic">HTML</span>, <span className="font-bold italic">CSS</span>,
                 and <span className="font-bold italic">JavaScript</span>, as well as
-                experience with web development frameworks like React and Tailwind, I am seeking an entry-level software developer position, preferably 
+                experience with web development frameworks like React and Tailwind, I am seeking an entry-level software developer position, preferably
                 in front-end development, where I can apply my technical skills and contribute to dynamic projects in the IT industry.
               </p>
             </div>
@@ -161,39 +188,39 @@ export default function Home() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 pt-12">
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/html.png" quality={100} width={100} height={100} alt="html" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">HTML</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">HTML</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/css.png" quality={100} width={100} height={100} alt="css" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">CSS</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">CSS</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/js.png" quality={100} width={100} height={100} alt="javascript" />
-                <p className="text-black font-semibold text-center text-normall md:text-xl">JavaScript</p>
+                {/* <p className="text-black font-semibold text-center text-normall md:text-xl">JavaScript</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/php.png" quality={100} width={100} height={100} alt="php" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">PHP</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">PHP</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/tailwind.png" quality={100} width={100} height={100} alt="tailwind" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">Tailwind</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">Tailwind</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/react.png" quality={100} width={100} height={100} alt="react" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">React</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">React</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/python.png" quality={100} width={100} height={100} alt="python" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">Python</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">Python</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/java.png" quality={100} width={100} height={100} alt="java" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">Java</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">Java</p> */}
               </div>
               <div className="flex flex-col justify-center items-center p-5">
                 <Image src="/images/mysql.png" quality={100} width={100} height={100} alt="mysql" />
-                <p className="text-black font-semibold text-center text-normal md:text-xl">MySQL</p>
+                {/* <p className="text-black font-semibold text-center text-normal md:text-xl">MySQL</p> */}
               </div>
             </div>
           </div>
@@ -294,6 +321,13 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <button
+        onClick={scrollToTop}
+        className={`${visible ? 'block' : 'hidden'
+          } fixed bottom-8 right-8 bg-indigo-500 h-auto text-white py-1 px-4 rounded-full shadow-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50`}
+      >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </button>
       <Footer />
     </div>
   )
