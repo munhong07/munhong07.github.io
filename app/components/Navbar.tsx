@@ -48,7 +48,7 @@ export const Navbar = () => {
                 </li>
             </ul>
             <div className="hidden md:flex" >
-                <a href="./images/html.png" className="flex justify-center items-center font-medium gap-2 hover:before:scale-x-100 hover:before:origin-left relative 
+                <a href="./images/Lai_Mun_Hong_CV.pdf" className="flex justify-center items-center font-medium gap-2 hover:before:scale-x-100 hover:before:origin-left relative 
                         before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 text-lg
                         before:scale-x-0 before:bg-indigo-500 before:absolute before:left-0 before:bottom-0 hover:text-indigo-500 duration-200" download>
                     <FontAwesomeIcon icon={faFileArrowDown} />
