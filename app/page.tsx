@@ -1,11 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3Alt, faJs } from "@fortawesome/free-brands-svg-icons";
-config.autoAddCss = false
+
 
 import Marquee from "react-fast-marquee";
 
@@ -13,11 +9,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Home() {
 
-
   return (
-  
-
-
       <main className="flex flex-col relative w-full flex flex-col bg-white dark:bg-black gap-20 md:gap-0">
         <section className="flex flex-col justify-center items-center md:flex-row h-auto lg:py-0 lg:h-screen  dark:bg-zinc-900 text-black dark:text-white w-full">
           <div className="flex flex-col md:flex-row lg:justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-100">
@@ -107,9 +99,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-900 rounded-2xl p-3 gap-5">
             <div className="justify-items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 w-full h-auto">
-              <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faHtml5} className="text-5xl " /></div>
+              {/* <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faHtml5} className="text-5xl " /></div>
               <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faCss3Alt} className="text-5xl " /></div>
-              <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faJs} className="text-5xl " /></div>
+              <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faJs} className="text-5xl " /></div> */}
               <div className="text-black bg-white rounded-lg w-24 h-24">React</div>
               <div className="text-black bg-white rounded-lg w-24 h-24">Tailwind</div>
               <div className="text-black bg-white rounded-lg w-24 h-24">Bootstrap</div>

@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faLightbulb, faMoon } from '@fortawesome/free-regular-svg-icons'; 
+
 
 export default function Navbar() {
 
@@ -135,25 +134,25 @@ export default function Navbar() {
                             <li>
                                 <button
                                     className="w-full text-left"
-                                    onClick={handleMenuItemClick}
+                                    // onClick={handleMenuItemClick}
                                 >About Me</button>
                             </li>
                             <li>
                                 <button
                                     className="w-full text-left"
-                                    onClick={handleMenuItemClick}
+                                    // onClick={handleMenuItemClick}
                                 >Experience </button>
                             </li>
                             <li>
                                 <button
                                     className="w-full text-left"
-                                    onClick={handleMenuItemClick}
+                                    // onClick={handleMenuItemClick}
                                 >Skill</button>
                             </li>
                             <li>
                                 <button
                                     className="w-full text-left"
-                                    onClick={handleMenuItemClick}
+                                    // onClick={handleMenuItemClick}
                                 >Project</button>
                             </li>
                         </ul>
@@ -168,7 +167,7 @@ export default function Navbar() {
                 onClick={toggleDarkMode}
             >
                 
-            {darkMode ? <FontAwesomeIcon icon={faLightbulb} className="text-xl"/> : <FontAwesomeIcon icon={faMoon} className="text-xl"/>}
+            {/* {darkMode ? <FontAwesomeIcon icon={faLightbulb} className="text-xl"/> : <FontAwesomeIcon icon={faMoon} className="text-xl"/>} */}
             </button>
 
             {/* Toggle Button */}
