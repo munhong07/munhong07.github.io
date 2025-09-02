@@ -78,7 +78,7 @@ export default function Navbar() {
 
     return (
         <nav className="flex flex-row justify-center items-center w-full top-0 z-10 fixed">
-            <div className="w-full md:w-[90%] lg:w-[85%] xl:w-[75%] h-14 flex justify-around md:justify-between items-center md:flex-row text-black  bg-zinc-100/99  dark:bg-zinc-800 dark:text-white bg-white rounded-b-lg transparent">
+            <div className="w-full md:w-[90%] lg:w-[85%] xl:w-[75%] h-14 flex justify-around md:justify-between items-center md:flex-row text-black  bg-zinc-100/99  dark:bg-zinc-800 dark:text-white bg-white rounded-b-2xl transparent">
 
                 <div className="flex justify-center items-center ml-6">
                     <h1 className="font-bold text-lg">Mun Hong</h1>
