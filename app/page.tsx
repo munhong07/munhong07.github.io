@@ -82,7 +82,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center dark:bg-zinc-950 h-auto lg:h-screen w-full">
+      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Skill</h1>
           <p className="">03</p>
@@ -112,10 +112,10 @@ export default function Home() {
 
         <div className="relative overflow-hidden w-[80%]">
           {/* Fade overlay - left */}
-          <div className="absolute left-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-r from-white to-transparent dark:from-zinc-950" />
+          <div className="absolute left-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-r from-white to-transparent dark:from-zinc-900" />
 
           {/* Fade overlay - right */}
-          <div className="absolute right-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-l from-white to-transparent dark:from-zinc-950" />
+          <div className="absolute right-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-l from-white to-transparent dark:from-zinc-900" />
 
           <Marquee className="text-zinc-600 dark:text-zinc-300 p-5">
             <div className="flex flex-row gap-20 text-lg">
@@ -202,9 +202,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="static lg:sticky lg:top-0 flex flex-col justify-center items-center  dark:bg-zinc-950 h-auto lg:h-screen w-full ">
+      <section className="static lg:sticky lg:top-0 flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
-          <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Project</h1>
+          <h1 className="text-2xl lg:text-base font-medium dark:text-white"><span className="font-bold">/</span> Project</h1>
           <p className="">05</p>
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-start lg:justify-between lg:items-start lg:flex-row gap-1 h-auto w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] h-full mb-15">
