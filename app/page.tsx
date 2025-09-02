@@ -2,18 +2,15 @@
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-
 import Marquee from "react-fast-marquee";
-
-
 
 export default function Home() {
 
   return (
       <main className="flex flex-col relative w-full flex flex-col bg-white dark:bg-black gap-20 md:gap-0">
         <section className="flex flex-col justify-center items-center md:flex-row h-auto lg:py-0 lg:h-screen  dark:bg-zinc-900 text-black dark:text-white w-full">
-          <div className="flex flex-col md:flex-row lg:justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-100">
-            <div className="flex flex-col justify-center items-center md:items-start bg-red-100 w-full lg:w-[50%] ">
+          <div className="flex flex-col md:flex-row lg:justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
+            <div className="flex flex-col justify-center items-center md:items-start w-full lg:w-[50%] ">
               <p className="font-bold text-2xl md:text-3xl">Hello!</p>
               <p className="font-bold text-4xl md:text-5xl">I'm <span className="text-black dark:text-white">Mun Hong</span></p>
               <p className="text-gray-500">Software Engineer Graduate</p>
@@ -26,7 +23,7 @@ export default function Home() {
                   and further develop technical skills and contribute to dynamic IT projects.</p>
               </div>
             </div>
-            <div className="flex justify-center items-center mt-10 md:mt-0 bg-yellow-100 w-full lg:w-[30%]">
+            <div className="flex justify-center items-center mt-10 md:mt-0 w-full lg:w-[30%]">
               <Image src="/cryingcat.jpg" alt="image" width={150} height={150} className="rounded-[50%] sm:w-[150px] md:w-[200px] lg:w-[250px] h-auto" />
             </div>
           </div>
@@ -45,7 +42,7 @@ export default function Home() {
         </div>
       </section> */}
 
-        <section className="flex flex-col justify-center items-center  dark:bg-gray-900 h-auto lg:h-screen w-full">
+        <section className="flex flex-col justify-center items-center  dark:bg-zinc-800 h-auto lg:h-screen w-full">
           <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
             <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Education</h1>
             <p className="">02</p>
@@ -85,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col justify-center items-center  dark:bg-gray-900 h-auto lg:h-screen w-full">
+        <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full">
           <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
             <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Skill</h1>
             <p className="">03</p>
@@ -97,17 +94,17 @@ export default function Home() {
               <p className="text-gray-500">Languages, frameworks, and tools that I'm familiar with.</p>
             </div>
           </div>
-          <div className="flex flex-col w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-900 rounded-2xl p-3 gap-5">
+          <div className="flex flex-col w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-900 dark:bg-white rounded-2xl p-3 gap-5">
             <div className="justify-items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 w-full h-auto">
-              {/* <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faHtml5} className="text-5xl " /></div>
-              <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faCss3Alt} className="text-5xl " /></div>
-              <div className="flex flex-col justify-center items-center text-black bg-white rounded-lg w-24 h-24"><FontAwesomeIcon icon={faJs} className="text-5xl " /></div> */}
-              <div className="text-black bg-white rounded-lg w-24 h-24">React</div>
-              <div className="text-black bg-white rounded-lg w-24 h-24">Tailwind</div>
-              <div className="text-black bg-white rounded-lg w-24 h-24">Bootstrap</div>
-              <div className="text-black bg-white rounded-lg w-24 h-24">MySQL</div>
-              <div className="text-black bg-white rounded-lg w-24 h-24">Git</div>
-              <div className="text-black bg-white rounded-lg w-24 h-24"></div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">HTML</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">CSS</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">Javascript</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">React</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">Tailwind</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">Bootstrap</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">MySQL</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">Git</div>
+              <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-900 dark:text-white rounded-lg w-24 h-24">Java</div>
 
 
             </div>
@@ -115,12 +112,12 @@ export default function Home() {
 
           <div className="relative overflow-hidden w-[80%]">
             {/* Fade overlay - left */}
-            <div className="absolute left-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-r from-white to-transparent" />
+            <div className="absolute left-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-r from-white to-transparent dark:from-zinc-900"/>
 
             {/* Fade overlay - right */}
-            <div className="absolute right-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-l from-white to-transparent" />
+            <div className="absolute right-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-l from-white to-transparent dark:from-zinc-900"/>
 
-            <Marquee className="text-zinc-600 p-5">
+            <Marquee className="text-zinc-600 dark:text-zinc-300 p-5">
               <div className="flex flex-row gap-20 text-lg">
                 <p>HTML</p>
                 <p>CSS</p>

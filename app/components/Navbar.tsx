@@ -77,7 +77,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="w-full h-16 flex justify-around items-center md:flex-row  text-black top-0 z-10 sticky dark:bg-black dark:text-white z-1 bg-white">
+        <nav className="w-full h-16 flex justify-around items-center md:flex-row  text-black top-0 z-10 sticky dark:bg-zinc-900 dark:text-white z-1 bg-white">
             <div className="flex justify-center items-center">
                 <h1>Mun Hong</h1>
             </div>
@@ -161,24 +161,24 @@ export default function Navbar() {
             )}
 
 
-            <button
+            {/* <button
                 className="hidden md:flex"
                 type="button"
                 onClick={toggleDarkMode}
             >
                 
+            </button> */}
             {/* {darkMode ? <FontAwesomeIcon icon={faLightbulb} className="text-xl"/> : <FontAwesomeIcon icon={faMoon} className="text-xl"/>} */}
-            </button>
 
             {/* Toggle Button */}
-            {/* <label className="hidden md:flex md:inline-flex md:items-center md:cursor-pointer">
+            <label className="hidden md:flex md:inline-flex md:items-center md:cursor-pointer">
                 <input type="checkbox" value="" className="sr-only peer" onChange={toggleDarkMode}/>
                 <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-yellow-300 dark:peer-focus:ring-blue-800 
                     rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white 
                     after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 
                     after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
-                <span className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle </span>
-            </label> */}
+                <span className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Theme </span>
+            </label>
         </nav>
     )
 }
