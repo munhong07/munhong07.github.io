@@ -77,7 +77,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="w-full h-16 flex justify-around items-center md:flex-row  text-black top-0 z-10 sticky dark:bg-zinc-900 dark:text-white z-1 bg-white">
+        <nav className="w-full h-16 flex justify-around items-center md:flex-row text-black top-0 z-10 sticky dark:bg-zinc-950 dark:text-white z-1 bg-white">
             <div className="flex justify-center items-center">
                 <h1>Mun Hong</h1>
             </div>
