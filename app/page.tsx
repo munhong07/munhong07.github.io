@@ -265,14 +265,14 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="static lg:sticky lg:top-0 flex flex-col justify-between items-center h-screen w-full bg-zinc-950  pt-[14%]">
+      <footer className="static lg:sticky lg:top-0 flex flex-col justify-between items-center h-screen w-full bg-zinc-950  pt-[14%] ">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-9xl font-semibold dark:text-white text-zinc-100">CONTACT ME</h1>
           {/* <p className=" text-white">05</p> */}
         </div>
-        <div className="flex flex-row justify-evenly items-center text-white w-full">
-          <p>test 1</p>
-          <p>test 2</p>
+        <div className="flex flex-row justify-between items-center text-white w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
+          <p>Thanks for visiting my portfolio!</p>
+          <p>© 2025 Mun Hong</p>
         </div>
       </footer>
 

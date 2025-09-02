@@ -77,21 +77,28 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="flex flex-row justify-center items-center w-[100%] top-0 z-10 fixed">
-            <div className="w-full md:w-[90%] lg:w-[85%] xl:w-[75%] h-14 flex justify-around items-center md:flex-row text-black  bg-zinc-100/99  dark:bg-zinc-800 dark:text-white bg-white rounded-b-lg transparent">
+        <nav className="flex flex-row justify-center items-center w-full top-0 z-10 fixed">
+            <div className="w-full md:w-[90%] lg:w-[85%] xl:w-[75%] h-14 flex justify-around md:justify-between items-center md:flex-row text-black  bg-zinc-100/99  dark:bg-zinc-800 dark:text-white bg-white rounded-b-lg transparent">
 
-                <div className="flex justify-center items-center">
-                    <h1>Mun Hong</h1>
+                <div className="flex justify-center items-center ml-6">
+                    <h1 className="font-bold text-lg">Mun Hong</h1>
                 </div>
 
                 {/* Desktop View */}
                 <div className="hidden md:flex">
-                    <ul className="md:flex md:flex-row md:justify-between md:items-center gap-10">
+                    <ul className="md:flex md:flex-row md:justify-between md:items-center gap-10 text-md">
                         <li className="">
                             <button
                                 className="hover:bg-red-200"
                                 onClick={() => handleMenuItemClick("aboutme")}
                             >Abount Me
+                            </button>
+                        </li>
+                        <li className="">
+                            <button
+                                className="hover:bg-red-200"
+                                onClick={() => handleMenuItemClick("education")}
+                            >Education
                             </button>
                         </li>
                         <li className="">
@@ -177,7 +184,7 @@ export default function Navbar() {
                 {/* {darkMode ? <FontAwesomeIcon icon={faLightbulb} className="text-xl"/> : <FontAwesomeIcon icon={faMoon} className="text-xl"/>} */}
 
                 {/* Toggle Button */}
-                <label className="hidden md:flex md:inline-flex md:items-center md:cursor-pointer">
+                <label className="hidden md:flex md:inline-flex md:items-center md:cursor-pointer mr-6">
                     <input type="checkbox" value="" className="sr-only peer" onChange={toggleDarkMode} />
                     <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-yellow-300 dark:peer-focus:ring-blue-800 
                     rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white 
