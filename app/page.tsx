@@ -1,14 +1,16 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-
+import Navbar from "./components/Navbar";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
 
   return (
-    <main className="flex flex-col relative w-full flex flex-col bg-white gap-20 md:gap-0">
-      <section className="flex flex-col justify-center items-center md:flex-row h-auto lg:py-0 lg:h-screen dark:bg-zinc-950 text-black dark:text-white w-full">
+
+    <main className="flex flex-col w-full flex flex-col bg-white gap-20 md:gap-0">
+      <Navbar />
+      <section className="flex flex-col justify-center items-center md:flex-row h-auto lg:py-0 lg:h-screen dark:bg-zinc-950 text-black dark:text-white w-full" id="aboutme">
         <div className="flex flex-col md:flex-row lg:justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
           <div className="flex flex-col justify-center items-center md:items-start w-full lg:w-[50%] ">
             <p className="font-bold text-2xl md:text-3xl">Hello!</p>
@@ -42,7 +44,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full">
+      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="education">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Education</h1>
           <p className="">02</p>
@@ -82,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full">
+      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="skill">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Skill</h1>
           <p className="">03</p>
@@ -133,7 +135,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center  dark:bg-zinc-900 h-auto lg:h-screen w-full">
+      <section className="flex flex-col justify-center items-center  dark:bg-zinc-900 h-auto lg:h-screen w-full" id="experience">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Experience</h1>
           <p className="">04</p>
@@ -202,12 +204,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="static lg:sticky lg:top-0 flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full">
+      <section className="static lg:sticky lg:top-0 flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="project">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base font-medium dark:text-white"><span className="font-bold">/</span> Project</h1>
           <p className="">05</p>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center items-start lg:justify-between lg:items-start lg:flex-row gap-1 h-auto w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] h-full mb-15">
+        <div className="flex flex-col lg:flex-row justify-center items-start lg:justify-between lg:items-start gap-1 h-auto w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] h-auto mb-15">
           <div className="flex flex-col items-start lg:w-[40%]">
             <p className="text-2xl lg:text-6xl font-bold pb-5 dark:text-white">Academic Projects</p>
             <p className="text-gray-500">Hands-on experience through technical projects during my studies.</p>
