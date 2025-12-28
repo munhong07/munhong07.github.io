@@ -89,35 +89,35 @@ export default function Navbar() {
                     <ul className="md:flex md:flex-row md:justify-between md:items-center gap-10 text-md">
                         <li className="">
                             <button
-                                className="hover:bg-red-200"
+                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
                                 onClick={() => handleMenuItemClick("aboutme")}
-                            >Abount Me
+                            >About Me
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-red-200"
+                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
                                 onClick={() => handleMenuItemClick("education")}
                             >Education
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-red-200"
+                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
                                 onClick={() => handleMenuItemClick("skill")}
                             >Skill
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-red-200"
+                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
                                 onClick={() => handleMenuItemClick("experience")}
                             >Experience
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-red-200"
+                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
                                 onClick={() => handleMenuItemClick("project")}
                             >Project
                             </button>

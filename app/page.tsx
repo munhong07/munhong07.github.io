@@ -5,12 +5,12 @@ import Navbar from "./components/Navbar";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
-
+  
   return (
 
     <main className="flex flex-col w-full flex flex-col bg-white gap-20 md:gap-0">
       <Navbar />
-      <section className="flex flex-col justify-center items-center md:flex-row h-screen lg:py-0 lg:h-screen dark:bg-zinc-950 text-black dark:text-white w-full " id="aboutme">
+      <section className="flex flex-col justify-center items-center md:flex-row h-screen lg:py-0 lg:h-screen dark:bg-zinc-950 text-black dark:text-white w-full" id="aboutme">
         <div className="flex flex-col md:flex-row lg:justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
           <div className="flex flex-col justify-center items-center md:items-start w-full lg:w-[50%] ">
             <p className="font-bold text-2xl md:text-3xl">Hello!</p>
@@ -49,13 +49,14 @@ export default function Home() {
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Education</h1>
           <p className="dark:text-white">02</p>
         </div>
-        <div className="flex flex-col justify-center items-start lg:justify-between lg:items-start lg:flex-row gap-1 h-auto w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
+        <div className="flex flex-col justify-center items-start lg:justify-between lg:items-start lg:flex-row gap-1 h-auto w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]" >
           <div className="flex flex-col items-start">
             <p className="text-2xl lg:text-6xl font-bold pb-5 dark:text-white">My Education</p>
             <p className="text-gray-500">A brief look at where I studied and what I focused on.</p>
           </div>
 
           <div className="flex flex-col bg-zinc-200 py-2 px-2 rounded-2xl gap-2 w-full lg:w-[50%] mt-10 md:mt-0 dark:bg-zinc-900">
+
             <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-950">
               <ul className="flex flex-col">
                 <li className="lg:text-xl font-bold dark:text-white">Asia Pacific University</li>
@@ -267,11 +268,11 @@ export default function Home() {
 
       <footer className="static lg:sticky lg:top-0 flex flex-col justify-between items-center h-screen w-full bg-zinc-950  pt-[14%] ">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
-          <h1 className="text-2xl lg:text-9xl font-semibold dark:text-white text-zinc-100">CONTACT ME</h1>
+          <h1 className="text-2xl lg:text-8xl font-semibold dark:text-white text-zinc-100">CONTACT ME</h1>
           {/* <p className=" text-white">05</p> */}
         </div>
-        <div className="flex flex-row justify-between items-center text-white w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
-          <p>Thanks for visiting my portfolio!</p>
+        <div className="flex flex-row justify-center items-center text-white w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
+          {/* <p>Thanks for visiting my portfolio!</p> */}
           <p>© 2025 Mun Hong</p>
         </div>
       </footer>
