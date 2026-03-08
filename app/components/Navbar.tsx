@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const popoverRef = useRef<HTMLDivElement>(null);
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState<boolean>(false);
 
 
     // useEffect(() => {
@@ -45,8 +45,6 @@ export default function Navbar() {
     const toggleDarkMode = () => {
         setDarkMode(prev => !prev)
     }
-
-
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
@@ -89,35 +87,35 @@ export default function Navbar() {
                     <ul className="md:flex md:flex-row md:justify-between md:items-center gap-10 text-md">
                         <li className="">
                             <button
-                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
+                                className="hover:bg-zinc-700 hover:text-zinc-100 px-2 rounded-md transition duration-200"
                                 onClick={() => handleMenuItemClick("aboutme")}
                             >About Me
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
+                                className="hover:bg-zinc-700 hover:text-zinc-100 px-2 rounded-md transition duration-200"
                                 onClick={() => handleMenuItemClick("education")}
                             >Education
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
+                                className="hover:bg-zinc-700 hover:text-zinc-100 px-2 rounded-md transition duration-200"
                                 onClick={() => handleMenuItemClick("skill")}
                             >Skill
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
+                                className="hover:bg-zinc-700 hover:text-zinc-100 px-2 rounded-md transition duration-200"
                                 onClick={() => handleMenuItemClick("experience")}
                             >Experience
                             </button>
                         </li>
                         <li className="">
                             <button
-                                className="hover:bg-black hover:text-white px-2 rounded-md transition hover:scale-110 duration-200"
+                                className="hover:bg-zinc-700 hover:text-zinc-100 px-2 rounded-md transition duration-200"
                                 onClick={() => handleMenuItemClick("project")}
                             >Project
                             </button>

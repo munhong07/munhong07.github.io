@@ -3,30 +3,39 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Marquee from "react-fast-marquee";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faHtml5,
+  faCss3Alt,
+  faSquareJs,
+  faReact,
+  faTailwindCss,
+  faBootstrap,
+  faGitAlt,
+  faJava,
+
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
-  
+
   return (
 
-    <main className="flex flex-col w-full flex flex-col bg-white gap-20 md:gap-0">
+    <main className="flex flex-col w-full flex flex-col bg-white dark:bg-zinc-900 gap-20 md:gap-0">
       <Navbar />
-      <section className="flex flex-col justify-center items-center md:flex-row h-screen lg:py-0 lg:h-screen dark:bg-zinc-950 text-black dark:text-white w-full" id="aboutme">
+      <section className="flex flex-col justify-center items-center md:flex-row h-screen lg:py-0 lg:h-screen dark:bg-zinc-900 text-black dark:text-white w-full" id="aboutme">
         <div className="flex flex-col md:flex-row lg:justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%]">
           <div className="flex flex-col justify-center items-center md:items-start w-full lg:w-[50%] ">
             <p className="font-bold text-2xl md:text-3xl">Hello!</p>
-            <p className="font-bold text-4xl md:text-5xl">I'm <span className="text-black dark:text-white">Mun Hong</span></p>
-            <p className="text-gray-500">Software Engineer Graduate</p>
+            <p className="font-bold text-4xl md:text-5xl">I'm <span className="text-black dark:text-zinc-100">Mun Hong</span></p>
 
             <div className="mt-10">
-              <button className="font-bold text-black dark:text-white lg:text-2xl">About <span className="text-zinc-600">me</span></button>
-              <p className="text-justify text-zinc-500 lg:text-lg">A software engineering graduate with a foundation in HTML, CSS,
-                JavaScript, and experience in React and Tailwind. Seeking an entry-level
-                software developer position to apply
-                and further develop technical skills and contribute to dynamic IT projects.</p>
+              <button className="font-bold text-black dark:text-zinc-400 lg:text-2xl">About me</button>
+              <p className="text-justify text-zinc-500 lg:text-lg mt-3 dark:text-zinc-300">Software Engineering graduate with experience building web applications using JavaScript, React, and modern
+                frontend tools. Interested in developing practical software solutions while continuously learning and experimenting with new technologies.</p>
             </div>
           </div>
           <div className="flex justify-center items-center mt-10 md:mt-0 w-full lg:w-[30%]">
-            <Image src="/cryingcat.jpg" alt="image" width={150} height={150} className="rounded-[50%] sm:w-[150px] md:w-[200px] lg:w-[250px] h-auto" />
+            <Image src="/cryingcat.jpg" alt="image" width={150} height={150} className="rounded-[10%] sm:w-[150px] md:w-[200px] lg:w-[250px] h-auto" />
           </div>
         </div>
       </section>
@@ -44,7 +53,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="flex flex-col justify-center items-center dark:bg-zinc-950 h-auto lg:h-screen w-full" id="education">
+      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="education">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Education</h1>
           <p className="dark:text-white">02</p>
@@ -55,29 +64,29 @@ export default function Home() {
             <p className="text-gray-500">A brief look at where I studied and what I focused on.</p>
           </div>
 
-          <div className="flex flex-col bg-zinc-200 py-2 px-2 rounded-2xl gap-2 w-full lg:w-[50%] mt-10 md:mt-0 dark:bg-zinc-900">
+          <div className="flex flex-col bg-zinc-200 py-2 px-2 rounded-2xl gap-2 w-full lg:w-[50%] mt-10 md:mt-0 dark:bg-zinc-800">
 
-            <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-950">
+            <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-900">
               <ul className="flex flex-col">
-                <li className="lg:text-xl font-bold dark:text-white">Asia Pacific University</li>
-                <li className="text-lg text-gray-500 pt-5">2018 - 2019</li>
+                <li className="lg:text-xl font-bold dark:text-zinc-200">Asia Pacific University</li>
+                <li className="text-lg text-gray-500 pt-5 dark:text-zinc-400">2018 - 2019</li>
                 <li className="font-medium dark:text-white">Certificate in Information Technology and Communication</li>
               </ul>
               <p className="dark:text-white">1</p>
             </div>
-            <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-950">
+            <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-900">
               <ul className="flex flex-col">
-                <li className="lg:text-xl font-bold dark:text-white">Asia Pacific University</li>
-                <li className="text-lg text-gray-500 pt-5">2019 - 2022</li>
+                <li className="lg:text-xl font-bold dark:text-zinc-200">Asia Pacific University</li>
+                <li className="text-lg text-gray-500 pt-5 dark:text-zinc-400">2019 - 2022</li>
                 <li className="font-medium dark:text-white">Diploma in Information Technology and Communication</li>
               </ul>
               <p className="dark:text-white">2</p>
             </div>
-            <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-950">
+            <div className="flex justify-between items-start py-5 px-5 bg-white rounded-lg dark:bg-zinc-900">
               <ul>
-                <li className="lg:text-xl font-bold dark:text-white">Asia Pacific University</li>
-                <li className="text-lg text-gray-500 pt-5 font-medium">2022 - 2024</li>
-                <li className="font-medium dark:text-white">Bachelor in Software Engineering</li>
+                <li className="lg:text-xl font-bold dark:text-zinc-200">Asia Pacific University</li>
+                <li className="text-lg text-gray-500 pt-5 dark:text-zinc-400">2022 - 2024</li>
+                <li className="font-medium dark:text-white">Bachelor of Science (Hons) in Software Engineering</li>
               </ul>
               <p className="dark:text-white">3</p>
             </div>
@@ -85,7 +94,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center dark:bg-zinc-950 h-auto lg:h-screen w-full" id="skill">
+      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="skill">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Skill</h1>
           <p className="dark:text-white">03</p>
@@ -97,46 +106,95 @@ export default function Home() {
             <p className="text-gray-500">Languages, frameworks, and tools that I'm familiar with.</p>
           </div>
         </div>
-        <div className="flex flex-col w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-900 dark:bg-white rounded-2xl p-3 gap-5 dark:bg-zinc-900">
+        <div className="flex flex-col w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] bg-zinc-950 rounded-2xl p-3 gap-5 dark:bg-zinc-800">
+          {/* <div className="justify-items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 w-full h-auto">
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faHtml5} className="text-5xl" />
+              <a className="text-sm">HTML</a>
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faCss3Alt} className="text-5xl" />
+              <a className="text-sm">CSS</a>
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faSquareJs} className="text-5xl" />
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faReact} className="text-5xl" />
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faTailwindCss} className="text-5xl" />
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faBootstrap} className="text-5xl" />
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">MySQL</div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faGitAlt} className="text-5xl" />
+            </div>
+            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24 gap-1">
+              <FontAwesomeIcon icon={faJava} className="text-5xl" />
+            </div>
+          </div> */}
+
           <div className="justify-items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 w-full h-auto">
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">HTML</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">CSS</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">Javascript</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">React</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">Tailwind</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">Bootstrap</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">MySQL</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">Git</div>
-            <div className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-950 dark:text-white rounded-lg w-24 h-24">Java</div>
-
-
+            {[
+              { icon: faHtml5, name: "HTML" },
+              { icon: faCss3Alt, name: "CSS" },
+              { icon: faSquareJs, name: "JavaScript" },
+              { icon: faReact, name: "React" },
+              { icon: faTailwindCss, name: "Tailwind" },
+              { icon: faBootstrap, name: "Bootstrap" },
+              { name: "MySQL" },
+              { icon: faGitAlt, name: "Git" },
+              { icon: faJava, name: "Java" }
+            ].map((skills, index) => (
+              <div
+                key={index}
+                className="flex flex-col justify-center items-center text-black bg-white dark:bg-zinc-700 dark:text-white rounded-lg w-24 h-24 gap-1"
+              >
+                {skills.icon && (
+                  <FontAwesomeIcon
+                    icon={skills.icon}
+                    className={`text-5xl`}
+                  />
+                )}
+                <span className="text-sm">{skills.name}</span>
+              </div>
+            ))}
           </div>
         </div>
 
         <div className="relative overflow-hidden w-[80%]">
           {/* Fade overlay - left */}
-          <div className="absolute left-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-r from-white to-transparent dark:from-zinc-950" />
+          <div className="absolute left-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-r from-white to-transparent dark:from-zinc-900" />
 
           {/* Fade overlay - right */}
-          <div className="absolute right-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-l from-white to-transparent dark:from-zinc-950" />
+          <div className="absolute right-0 top-0 w-20 h-full z-10 pointer-events-none bg-gradient-to-l from-white to-transparent dark:from-zinc-900" />
 
           <Marquee className="text-zinc-600 dark:text-zinc-300 p-5">
             <div className="flex flex-row gap-20 text-lg">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-              <p>React</p>
-              <p>Tailwind</p>
-              <p>MySQL</p>
-              <p>Java</p>
-              <p>Git</p>
-              <p></p>
+              {[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Tailwind",
+                "MySQL",
+                "Java",
+                "Git",
+                "blank",
+              ].map((skill) => (
+                <div key={skill}>
+                  <p>{skill}</p>
+                </div>
+              ))}
             </div>
           </Marquee>
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center dark:bg-zinc-950 h-auto lg:h-screen w-full" id="experience">
+      <section className="flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="experience">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base  font-medium dark:text-white"><span className="font-bold">/</span> Experience</h1>
           <p className="dark:text-white">04</p>
@@ -148,29 +206,28 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] h-auto bg-zinc-900 dark:bg-zinc-900 rounded-2xl">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] h-auto bg-zinc-900 dark:bg-zinc-800 rounded-2xl">
           <div className=" flex flex-col w-full lg:w-[50%] px-1.5 pt-1.5 pb-1.5 h-auto">
-            <div className="flex flex-col p-5 bg-white rounded-xl h-auto  md:h-[320px] lg:h-[420px] gap-3 dark:bg-zinc-950">
+            <div className="flex flex-col p-5 bg-white rounded-xl h-auto  md:h-[320px] lg:h-[420px] gap-3 dark:bg-zinc-900">
 
               <h1 className="text-black font-bold text-xl dark:text-white">TigaKy Sdn Bhd</h1>
               <div className="flex flex-row justify-between w-full">
-                <p className="text-zinc-500">2023 - 2024</p>
+                <p className="text-zinc-500"> Jan 2023 - April 2023</p>
                 <p className=""><span className="bg-zinc-300 p-1 px-2 rounded-2xl text-black">IT Intern</span></p>
               </div>
               <ul className="list-disc list-inside text-justify text-dark dark:text-white">
-                <li>Developed responsive web pages using React and Bootstrap for a
-                  management system, including user input forms and OTP
-                  verification, and integrated API for data fetching and submission.
-                </li>
-                <li>Integrated Leaflet.js for interactive maps with geographic
-                  coordinate markers to enhance user experience.
-                </li>
-                <li>Deployed virtual machines, installed various operating systems
-                  including Windows, Ubuntu, and Debian on Proxmox.
+                <li>
+                  Developed responsive web pages using React and Bootstrap for a management system, including input forms and OTP verification, integrated with Rest API for data fetching and submission.
                 </li>
                 <li>
-                  Configured Shinobi CCTV systems for surveillance camera and
-                  stream management.
+                  Collaborated with team members to improve UI behavior, troubleshoot bugs, and enhance usability.
+                </li>
+                <li>
+                  Integrated Leaflet.js for interactive maps with geographic
+                  coordinate markers to enhance user experience.
+                </li>
+                <li>
+                  Assisted in deploying and configuring Proxmox virtual machines running Windows and Linux.
                 </li>
               </ul>
             </div>
@@ -182,22 +239,21 @@ export default function Home() {
               <h1 className="text-zinc-100 font-bold text-xl">Medical Awareness Camp Outreach (MACO)</h1>
               <div className="flex flex-row justify-between w-full my-2">
 
-                <p className="text-zinc-400"> 2023 - Present</p>
+                <p className="text-zinc-400"> Jan 2024 - Present</p>
                 <p><span className="bg-zinc-300 p-1 px-2 rounded-2xl text-black">IT Technician</span></p>
               </div>
-              <ul className="list-disc list-inside text-justify text-zinc-300 ">
-                <li>Refurbished donated computers and peripherals for distribution
-                  to schools in need.
-                </li>
-                <li>Maintained inventory to meet weekly and monthly distribution
-                  schedules.
-                </li>
-                <li>Implemented a multi-seat Ubuntu system enabling multiple users
-                  to share one PC.
+              <ul className="list-disc list-inside text-justify text-zinc-300">
+                <li>
+                  Contributed to a Linux disk cloning system on Debian, using Next.js for user interface integrated with FastAPI and Bash scripts to automate cloning tasks.
                 </li>
                 <li>
-                  Provided IT support and troubleshooting to maintain hardware
-                  and software functionality.
+                  Refurbished computers, ensuring system was fully functional and ready for reliable use.
+                </li>
+                <li>
+                  Provided first-level IT support, troubleshooting hardware and software issues to maintain reliable system functionality.
+                </li>
+                <li>
+                  Assisted with workstation and network setup, connecting devices, and resolving connectivity issues.
                 </li>
               </ul>
             </div>
@@ -205,7 +261,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="static lg:sticky lg:top-0 flex flex-col justify-center items-center dark:bg-zinc-950 h-auto lg:h-screen w-full" id="project">
+      <section className="static lg:sticky lg:top-0 flex flex-col justify-center items-center dark:bg-zinc-900 h-auto lg:h-screen w-full" id="project">
         <div className="flex flex-row justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] xl:w-[75%] mx-auto mb-15">
           <h1 className="text-2xl lg:text-base font-medium dark:text-white"><span className="font-bold">/</span> Project</h1>
           <p className="dark:text-white">05</p>
@@ -217,8 +273,8 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-start items-start lg:w-[50%] gap-2 h-[650px] mt-10 md:mt-0">
-            <div className="w-full p-2 bg-zinc-100 h-[50%] dark:bg-zinc-900 rounded-2xl">
-              <div className="flex flex-col p-4 bg-white h-full rounded-xl gap-5 dark:bg-zinc-950">
+            <div className="w-full p-2 bg-zinc-100 h-[50%] dark:bg-zinc-700 rounded-2xl">
+              <div className="flex flex-col p-4 bg-white h-full rounded-xl gap-5 dark:bg-zinc-800">
                 <div className="flex justify-between items-center">
                   <h1 className="font-bold text-black dark:text-white">Hand Gesture Recognition System</h1>
                   <p className="flex justify-center items-center p-1 bg-zinc-200 rounded-xl px-2 text-sm">Final Year Project</p>
@@ -245,8 +301,8 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="w-full p-2 bg-gray-100 h-[50%] rounded-2xl dark:bg-zinc-900">
-              <div className="flex flex-col bg-white w-full px-5 py-5 h-full rounded-xl gap-5 dark:bg-zinc-950">
+            <div className="w-full p-2 bg-gray-100 h-[50%] rounded-2xl dark:bg-zinc-700">
+              <div className="flex flex-col bg-white w-full px-5 py-5 h-full rounded-xl gap-5 dark:bg-zinc-800">
                 <div className="flex justify-between items-center">
                   <h1 className="font-bold text-black dark:text-white">Quiz Learning System</h1>
                   <p className="flex justify-center items-center p-1 bg-zinc-200 rounded-xl px-2 text-sm">Coursework</p>
